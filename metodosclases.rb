@@ -3,11 +3,11 @@
 class Carro
     @marca = 'Renaul'
    
-    def arrancar
+    def arrancar  #Metodo es de la clase y del objeto
     puts "Arrancandoo!!!"
     end
 
-    class << self
+    class << self   #Metodo es de la clase y no del objeto
         def marca
             @marca
         end
@@ -22,5 +22,5 @@ end
 Carro.marca = 'Nissan'
 puts Carro.marca
 
-bww =Carro.new
+bww =Carro.new   
 bww.arrancar
